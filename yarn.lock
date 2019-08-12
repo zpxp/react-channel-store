@@ -2018,6 +2018,13 @@ channel-event@^3.0.*:
   dependencies:
     manual-promise "^1.0.3"
 
+channel-store@^1.0.*:
+  version "1.0.4"
+  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/channel-store/-/channel-store-1.0.4.tgz#cf2758eee3ab6dd5303875aba8852e105e0f0dc7"
+  integrity sha1-zydY7uOrbdUwOHWrqIUuEF4PDcc=
+  dependencies:
+    channel-event "^3.0.*"
+
 chokidar@^2.0.2:
   version "2.1.6"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/chokidar/-/chokidar-2.1.6.tgz#b6cad653a929e244ce8a834244164d241fa954c5"

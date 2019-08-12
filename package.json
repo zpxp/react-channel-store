@@ -66,6 +66,7 @@
         "webpack": "4.30.0"
     },
     "dependencies": {
+        "channel-store": "^1.0.*",
         "react": "^16.0.0",
         "react-channel-event": "^2.0.*"
     }
