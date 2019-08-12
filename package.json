@@ -1,6 +1,6 @@
 {
     "name": "react-channel-store",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "lib/index.js",
     "repository": "https://github.com/zpxp/react-channel-store.git",
     "author": "brendo",
@@ -8,13 +8,13 @@
     "files": [
         "dist/**/*",
         "lib/**/*"
-	 ],
-	 "keywords": [
-		"react",
-		"redux",
-		"store",
-		"channel-event" 
-	 ],
+    ],
+    "keywords": [
+        "react",
+        "redux",
+        "store",
+        "channel-event"
+    ],
     "scripts": {
         "analyze": "source-map-explorer dist/js/main.*",
         "build": "yarn install && node scripts/build.js",
@@ -66,8 +66,8 @@
         "webpack": "4.30.0"
     },
     "dependencies": {
-        "channel-store": "^1.0.1",
-        "react": "16.0.0",
-        "react-channel-event": "^2.0.6"
+        "channel-store": "^1.0.*",
+        "react": "^16.0.0",
+        "react-channel-event": "^2.0.*"
     }
 }

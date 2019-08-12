@@ -1380,11 +1380,6 @@ array-unique@^0.3.2:
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
   integrity sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
 
-asap@~2.0.3:
-  version "2.0.6"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
-  integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
-
 asn1.js@^4.0.0:
   version "4.10.1"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/asn1.js/-/asn1.js-4.10.1.tgz#b9c2bf5805f1e64aadeed6df3a2bfafb5a73f5a0"
@@ -2023,7 +2018,7 @@ channel-event@^3.0.*, channel-event@^3.0.0:
   dependencies:
     manual-promise "^1.0.3"
 
-channel-store@^1.0.1:
+channel-store@^1.0.*:
   version "1.0.1"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/channel-store/-/channel-store-1.0.1.tgz#e9b46f0991ae623cc3d8c0fb640843be84d338c9"
   integrity sha1-6bRvCZGuYjzD2MD7ZAhDvoTTOMk=
@@ -2227,11 +2222,6 @@ core-js-compat@^3.0.0:
   dependencies:
     browserslist "^4.6.6"
     semver "^6.3.0"
-
-core-js@^1.0.0:
-  version "1.2.7"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
-  integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
 
 core-js@^2.4.0, core-js@^2.5.0:
   version "2.6.9"
@@ -2596,13 +2586,6 @@ emojis-list@^2.0.0:
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
   integrity sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
 
-encoding@^0.1.11:
-  version "0.1.12"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
-  integrity sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=
-  dependencies:
-    iconv-lite "~0.4.13"
-
 end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   version "1.4.1"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/end-of-stream/-/end-of-stream-1.4.1.tgz#ed29634d19baba463b6ce6b80a37213eab71ec43"
@@ -2832,19 +2815,6 @@ fb-watchman@^2.0.0:
   integrity sha1-VOmr99+i8mzZsWNsWIwa/AXeXVg=
   dependencies:
     bser "^2.0.0"
-
-fbjs@^0.8.16:
-  version "0.8.17"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
-  integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
-  dependencies:
-    core-js "^1.0.0"
-    isomorphic-fetch "^2.1.1"
-    loose-envify "^1.0.0"
-    object-assign "^4.1.0"
-    promise "^7.1.1"
-    setimmediate "^1.0.5"
-    ua-parser-js "^0.7.18"
 
 figgy-pudding@^3.5.1:
   version "3.5.1"
@@ -3255,7 +3225,7 @@ https-browserify@^1.0.0:
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-iconv-lite@0.4.24, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
+iconv-lite@0.4.24, iconv-lite@^0.4.4:
   version "0.4.24"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
   integrity sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=
@@ -3559,7 +3529,7 @@ is-regex@^1.0.4:
   dependencies:
     has "^1.0.1"
 
-is-stream@^1.0.1, is-stream@^1.1.0:
+is-stream@^1.1.0:
   version "1.1.0"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
   integrity sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
@@ -3612,14 +3582,6 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
-
-isomorphic-fetch@^2.1.1:
-  version "2.2.1"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
-  integrity sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
-  dependencies:
-    node-fetch "^1.0.1"
-    whatwg-fetch ">=0.10.0"
 
 isstream@~0.1.2:
   version "0.1.2"
@@ -4692,14 +4654,6 @@ nice-try@^1.0.4:
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha1-ozeKdpbOfSI+iPybdkvX7xCJ42Y=
 
-node-fetch@^1.0.1:
-  version "1.7.3"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
-  integrity sha1-mA9vcthSEaU0fGsrwYxbhMPrR+8=
-  dependencies:
-    encoding "^0.1.11"
-    is-stream "^1.0.1"
-
 node-gyp@^3.8.0:
   version "3.8.0"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/node-gyp/-/node-gyp-3.8.0.tgz#540304261c330e80d0d5edce253a68cb3964218c"
@@ -5681,13 +5635,6 @@ promise-inflight@^1.0.1:
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
-promise@^7.1.1:
-  version "7.3.1"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
-  integrity sha1-BktyYCsY+Q8pGSuLG8QY/9Hr078=
-  dependencies:
-    asap "~2.0.3"
-
 prompts@^2.0.1:
   version "2.2.1"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/prompts/-/prompts-2.2.1.tgz#f901dd2a2dfee080359c0e20059b24188d75ad35"
@@ -5696,7 +5643,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.3"
 
-prop-types@^15.6.0, prop-types@^15.6.2:
+prop-types@^15.6.2:
   version "15.7.2"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -5821,7 +5768,7 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-channel-event@^2.0.6:
+react-channel-event@^2.0.*:
   version "2.0.6"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/react-channel-event/-/react-channel-event-2.0.6.tgz#f79b578e0419cd174b86b93b484c6bf0fb8b15e5"
   integrity sha1-95tXjgQZzRdLhrk7SExr8PuLFeU=
@@ -5845,17 +5792,7 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha1-IcqVYTmarQ/xp3AcAWg+jKmB7cs=
 
-react@16.0.0:
-  version "16.0.0"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/react/-/react-16.0.0.tgz#ce7df8f1941b036f02b2cca9dbd0cb1f0e855e2d"
-  integrity sha1-zn348ZQbA28Cssyp29DLHw6FXi0=
-  dependencies:
-    fbjs "^0.8.16"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.0"
-
-react@^16.1.0:
+react@^16.0.0, react@^16.1.0:
   version "16.9.0"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"
   integrity sha1-QLovmvE7waONddvy9DWaUYXE96o=
@@ -6272,7 +6209,7 @@ set-value@^2.0.0, set-value@^2.0.1:
     is-plain-object "^2.0.3"
     split-string "^3.0.1"
 
-setimmediate@^1.0.4, setimmediate@^1.0.5:
+setimmediate@^1.0.4:
   version "1.0.5"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
   integrity sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
@@ -6900,11 +6837,6 @@ typescript@3.4.3:
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/typescript/-/typescript-3.4.3.tgz#0eb320e4ace9b10eadf5bc6103286b0f8b7c224f"
   integrity sha1-DrMg5KzpsQ6t9bxhAyhrD4t8Ik8=
 
-ua-parser-js@^0.7.18:
-  version "0.7.20"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
-  integrity sha1-dScXi4L2pioPJD0flP0w4+PCEJg=
-
 uglify-js@^3.1.4:
   version "3.6.0"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/uglify-js/-/uglify-js-3.6.0.tgz#704681345c53a8b2079fb6cec294b05ead242ff5"
@@ -7150,11 +7082,6 @@ whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3, whatwg-encoding@^1.0.5:
   integrity sha1-WrrPd3wyFmpR0IXWtPPn0nET3bA=
   dependencies:
     iconv-lite "0.4.24"
-
-whatwg-fetch@>=0.10.0:
-  version "3.0.0"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
-  integrity sha1-/IBORYzEYACbGiuWa8iBfSV4rvs=
 
 whatwg-mimetype@^2.1.0, whatwg-mimetype@^2.2.0, whatwg-mimetype@^2.3.0:
   version "2.3.0"
