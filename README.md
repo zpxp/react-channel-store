@@ -20,14 +20,14 @@ In your App startup create a `IHub` instance and add the store middleware `creat
 import { createHub } from "channel-event";
 import { createStoreMiddleware, IStoreEvents } from "channel-store";
 
-export interface AppStore {
+export interface AppState {
    count: number
 }
 
 
 const hub = createHub(...);
 
-const store = createStoreMiddleware<AppStore>(hub)
+const store = createStoreMiddleware<AppState>(hub)
                   .addDefaultState({ count: 4 })
                   .build();
 
@@ -83,12 +83,7 @@ interface Props extends IStoreConnect<AppState> {
 interface State {}
 
 
-interface AppState { 
-   count: number
-}
-
-
 ```
 
 
-Add the `@ChannelEvent()` decorator as well as the `ChannelProps<...>` interface to the props (typescript only) to access the channel along side the state
+Add the `@ChannelEvent()` decorator, as well as the `ChannelProps<...>` interface to the props (typescript only), to access the channel in `this.props.channel`
