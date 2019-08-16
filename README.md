@@ -11,6 +11,37 @@ React component decorator for `channel-store` middleware plugin to expose the am
 
 ### Use
 
+First, follow the installation instructions for [channel-store](https://github.com/zpxp/channel-store) and [react-channel-event](https://github.com/zpxp/react-channel-event)
+
+In your App startup create a `IHub` instance and add the store middleware `createStoreMiddleware`.
+
+``` tsx
+
+import { createHub } from "channel-event";
+import { createStoreMiddleware, IStoreEvents } from "channel-store";
+
+export interface AppStore {
+   count: number
+}
+
+
+const hub = createHub(...);
+
+const store = createStoreMiddleware<AppStore>(hub)
+                  .addDefaultState({ count: 4 })
+                  .build();
+
+```
+
+Then wrap the root of your App with `ChannelEventProvider` to allow react components to access the hub you created in the last step
+
+``` tsx
+      <ChannelEventProvider hub={hub}>
+            <App />
+      </ChannelEventProvider>
+```
+
+Now, components can be decorated with `Connect` to inject state values into the props.
 
 ``` tsx
 import { Connect, IStoreConnect } from "react-channel-store";
@@ -21,7 +52,6 @@ import { ChannelEvent, ChannelProps } from "react-channel-event";
 @Connect<Props>(state => ({
    countMember: state.count
 }))
-@ChannelEvent()
 export default class Test extends React.PureComponent<Props, State> {
    render() {
       // the state's count member now is accessable as this.props.countMember
@@ -40,7 +70,13 @@ export default class Test extends React.PureComponent<Props, State> {
    }
 }
 
-interface Props extends ChannelProps<IStoreEvents<AppState>>, IStoreConnect<AppState> {
+// or without a decorator
+
+// export default Connect(state => ({
+//   countMember: state.count
+// }))(Test);
+
+interface Props extends IStoreConnect<AppState> {
    countMember: number;
 }
 
@@ -53,3 +89,6 @@ interface AppState {
 
 
 ```
+
+
+Add the `@ChannelEvent()` decorator as well as the `ChannelProps<...>` interface to the props (typescript only) to access the channel along side the state
