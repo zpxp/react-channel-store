@@ -5757,12 +5757,11 @@ rc@^1.2.7:
     strip-json-comments "~2.0.1"
 
 react-channel-event@^2.0.*:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/react-channel-event/-/react-channel-event-2.0.10.tgz#463f0b8dbd7f4275ab5b5610e876731a3a5d19fc"
-  integrity sha512-tBEIY3qMug4bCYxKlaFvWi6LrlsiP9XZi2V5a0dcsnBmpPQvaLVRuj7cJkOb0ysUeVE4JGRRJ8qWj+C+qXvUzA==
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/react-channel-event/-/react-channel-event-2.0.11.tgz#7881276d0b02c4b6900622d852f2e953412ec3b2"
+  integrity sha512-5ogi+IIVccMdXcBOeKk0DtqEBVwSwlXc6WB1VcP971eZ1yUhpN2w121lF7eFzbN2VvEgc1l+RavPza5xM0HIGQ==
   dependencies:
     channel-event "^3.1.*"
-    node-sass "^4.13.0"
     react "^16.1.0"
 
 react-is@^16.8.1, react-is@^16.8.4:
