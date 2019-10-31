@@ -8,7 +8,7 @@ const defaultconf: Config = {
 };
 
 interface Config {
-	/** Forward ref to `props.forwardedRef`. Default true */
+	/** Forward ref to `props.ref`. Default true */
 	forwardRef?: boolean;
 }
 
@@ -20,12 +20,12 @@ function ConnectImpl<Selecter extends (state: any) => Partial<any>>(
 	conf = { ...defaultconf, ...conf };
 
 	@ChannelEvent()
-	class StoreConnect extends React.PureComponent<ChannelProps<IStoreEvents<object>>, { currentState: object }> {
+	class StoreConnect extends React.PureComponent<{ __internal_ref: any } & ChannelProps<IStoreEvents<object>>, { currentState: object }> {
 		static __STORE_CONNECT = true;
 		setStore: (data: object | ((oldStore: object) => object), callback?: () => void) => void;
 		cbs: Array<() => void>;
 
-		constructor(props: ChannelProps<IStoreEvents<object>>) {
+		constructor(props: { __internal_ref: any } & ChannelProps<IStoreEvents<object>>) {
 			super(props);
 			this.cbs = [];
 
@@ -57,15 +57,14 @@ function ConnectImpl<Selecter extends (state: any) => Partial<any>>(
 
 		render() {
 			const Elem = component;
-			return <Elem {...this.props} {...this.state.currentState} setStore={this.setStore} />;
+			const { __internal_ref, ...props } = this.props;
+			return <Elem {...props} {...this.state.currentState} setStore={this.setStore} ref={__internal_ref} />;
 		}
 	}
 
 	const El = StoreConnect as any;
 
-	return conf.forwardRef
-		? React.forwardRef((props, ref) => <El {...props} forwardedRef={(props as any).forwardedRef || ref} setStore />)
-		: StoreConnect;
+	return conf.forwardRef ? React.forwardRef((props, ref) => <El {...props} __internal_ref={ref} />) : StoreConnect;
 }
 
 /**
@@ -89,8 +88,8 @@ export function Connect<
 export interface IStoreConnect<State extends object> {
 	/**
 	 * Automaticly send the update event in the current channel context to update the ambient store
-	 * @param data 
-	 * @param callback 
+	 * @param data
+	 * @param callback
 	 */
 	setStore(data: Partial<State> | ((oldState: State) => Partial<State>), callback?: () => void): void;
 }
