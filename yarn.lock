@@ -2011,18 +2011,6 @@ chalk@^1.1.1, chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-channel-event@^3.1.*:
-  version "3.1.1"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/channel-event/-/channel-event-3.1.1.tgz#48cfd71b7568d0404eed7bdc1b76506b146c6297"
-  integrity sha1-SM/XG3Vo0EBO7XvcG3ZQaxRsYpc=
-
-channel-store@^1.0.*:
-  version "1.0.6"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/channel-store/-/channel-store-1.0.6.tgz#b2a9cb56bde9ff04c3cf47779629ea4e80d53214"
-  integrity sha1-sqnLVr3p/wTDz0d3linqToDVMhQ=
-  dependencies:
-    channel-event "^3.1.*"
-
 chokidar@^2.0.2:
   version "2.1.6"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/chokidar/-/chokidar-2.1.6.tgz#b6cad653a929e244ce8a834244164d241fa954c5"
@@ -2718,6 +2706,13 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
+executioner@^2.0.1:
+  version "2.0.1"
+  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/executioner/-/executioner-2.0.1.tgz#add328e03bc45dd598f358fbb529fc0be0ec6fcd"
+  integrity sha1-rdMo4DvEXdWY81j7tSn8C+Dsb80=
+  dependencies:
+    mixly "^1.0.0"
+
 exit@^0.1.2:
   version "0.1.2"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
@@ -2973,6 +2968,11 @@ fstream@^1.0.0, fstream@^1.0.12:
     inherits "~2.0.0"
     mkdirp ">=0.5 0"
     rimraf "2"
+
+fulcon@^1.0.1:
+  version "1.0.2"
+  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/fulcon/-/fulcon-1.0.2.tgz#8a4dfda4c73fcd9cc62a79d5045c392b45547320"
+  integrity sha1-ik39pMc/zZzGKnnVBFw5K0VUcyA=
 
 function-bind@^1.1.1:
   version "1.1.1"
@@ -3355,6 +3355,14 @@ ini@~1.3.0:
   version "1.3.5"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
   integrity sha1-7uJfVtscnsYIXgwid4CD9Zar+Sc=
+
+install-peers-cli@^2.2.0:
+  version "2.2.0"
+  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/install-peers-cli/-/install-peers-cli-2.2.0.tgz#f76f1ec8ac9fa7f920c05743e011554edad85f8d"
+  integrity sha1-928eyKyfp/kgwFdD4BFVTtrYX40=
+  dependencies:
+    commander "^2.20.0"
+    executioner "^2.0.1"
 
 invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
@@ -4313,7 +4321,7 @@ lodash@^4.0.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.4
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
+loose-envify@^1.0.0:
   version "1.4.0"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=
@@ -4568,6 +4576,13 @@ mixin-object@^2.0.1:
   dependencies:
     for-in "^0.1.3"
     is-extendable "^0.1.1"
+
+mixly@^1.0.0:
+  version "1.0.0"
+  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/mixly/-/mixly-1.0.0.tgz#9b5a2e1f63e6dfba0d30e6797ffae62ab1dc24ef"
+  integrity sha1-m1ouH2Pm37oNMOZ5f/rmKrHcJO8=
+  dependencies:
+    fulcon "^1.0.1"
 
 "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   version "0.5.1"
@@ -5631,15 +5646,6 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.3"
 
-prop-types@^15.6.2:
-  version "15.7.2"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
-  integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
-  dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.8.1"
-
 prr@~1.0.1:
   version "1.0.1"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
@@ -5756,27 +5762,10 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-channel-event@^2.0.*:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/react-channel-event/-/react-channel-event-2.0.11.tgz#7881276d0b02c4b6900622d852f2e953412ec3b2"
-  integrity sha512-5ogi+IIVccMdXcBOeKk0DtqEBVwSwlXc6WB1VcP971eZ1yUhpN2w121lF7eFzbN2VvEgc1l+RavPza5xM0HIGQ==
-  dependencies:
-    channel-event "^3.1.*"
-    react "^16.1.0"
-
-react-is@^16.8.1, react-is@^16.8.4:
+react-is@^16.8.4:
   version "16.9.0"
   resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha1-IcqVYTmarQ/xp3AcAWg+jKmB7cs=
-
-react@^16.0.0, react@^16.1.0:
-  version "16.9.0"
-  resolved "https://www.myget.org/F/redisoft-components/auth/e9969204-1895-439f-b99e-995965d8088b/npm/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"
-  integrity sha1-QLovmvE7waONddvy9DWaUYXE96o=
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
