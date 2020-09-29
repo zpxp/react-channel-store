@@ -20,12 +20,12 @@ function ConnectImpl<Selecter extends (state: any) => Partial<any>>(
 	conf = { ...defaultconf, ...conf };
 
 	@ChannelEvent()
-	class StoreConnect extends React.PureComponent<{ __internal_ref: any } & ChannelProps<IStoreEvents<object>>, { currentState: object }> {
+	class StoreConnect extends React.PureComponent<{ _internal_ref: any } & ChannelProps<IStoreEvents<object>>, { currentState: object }> {
 		static __STORE_CONNECT = true;
 		setStore: (data: object | ((oldStore: object) => object), callback?: () => void) => void;
 		cbs: Array<() => void>;
 
-		constructor(props: { __internal_ref: any } & ChannelProps<IStoreEvents<object>>) {
+		constructor(props: { _internal_ref: any } & ChannelProps<IStoreEvents<object>>) {
 			super(props);
 			this.cbs = [];
 
@@ -57,14 +57,14 @@ function ConnectImpl<Selecter extends (state: any) => Partial<any>>(
 
 		render() {
 			const Elem = component;
-			const { __internal_ref, ...props } = this.props;
-			return <Elem {...props} {...this.state.currentState} setStore={this.setStore} ref={__internal_ref} />;
+			const { _internal_ref, ...props } = this.props;
+			return <Elem {...props} {...this.state.currentState} setStore={this.setStore} ref={_internal_ref} />;
 		}
 	}
 
 	const El = StoreConnect as any;
 
-	return conf.forwardRef ? React.forwardRef((props, ref) => <El {...props} __internal_ref={ref} />) : StoreConnect;
+	return conf.forwardRef ? React.forwardRef((props, ref) => <El {...props} _internal_ref={ref} />) : StoreConnect;
 }
 
 /**
