@@ -17,7 +17,7 @@
     ],
     "scripts": {
         "analyze": "source-map-explorer dist/js/main.*",
-        "build": "yarn install && node scripts/build.js",
+        "build": " node scripts/build.js",
         "test": "node scripts/test.js --passWithNoTests",
         "new-version-patch": " yarn version --new-version patch",
         "new-version": " yarn version",
@@ -67,8 +67,8 @@
         "webpack": "4.30.0"
     },
     "peerDependencies": {
-        "channel-store": "^1.0.*",
+        "channel-store": "^1.0.0",
         "react": "^16.0.0",
-        "react-channel-event": "^2.0.*"
+        "react-channel-event": "^2.0.0"
     }
 }

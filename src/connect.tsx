@@ -33,7 +33,7 @@ function ConnectImpl<Selecter extends (state: any) => Partial<any>>(
 				currentState: mapStateToProps(this.props.channel.send(storeEvents.GET_STATE))
 			};
 
-			this.props.channel.listen(storeEvents.STATE_UPDATED, data => {
+			this.props.channel.listen(storeEvents.STATE_UPDATED, (data: any) => {
 				this.setState(
 					prev => {
 						return { currentState: mapStateToProps(data.payload) };
