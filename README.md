@@ -1,8 +1,8 @@
 # react-channel-store
 
-![Bundlephobia gzip + minified](https://badgen.net/bundlephobia/minzip/react-channel-store)
-
 React component decorator for `channel-store` middleware plugin to expose the ambient state to components
+
+![Bundlephobia gzip + minified](https://badgen.net/bundlephobia/minzip/react-channel-store)
 
 ### Installation
 
